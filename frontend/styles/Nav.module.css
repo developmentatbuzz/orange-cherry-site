@@ -37,6 +37,13 @@
   z-index: 1;
 }
 
+.navInnerWrapper {
+  width: fit-content;
+  height: fit-content;
+  position: relative;
+  transition: left 200ms cubic-bezier(.13, .53, .38, .97);
+}
+
 .linkWrapper {
   display: flex;
   margin-top: clamp(2rem, 2vw, 3rem);
@@ -46,14 +53,11 @@
   transform: translateY(70%) scale(.9);
   width: max-content;
   position: relative;
+  /* transition: left 200ms cubic-bezier(.13, .53, .38, .97); */
 }
 
 .linkWrapperOpen {
   transform: translateY(0%) scale(1);
-}
-
-.navTab {
-  
 }
 
 .navText {
