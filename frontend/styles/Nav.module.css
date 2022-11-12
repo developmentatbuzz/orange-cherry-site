@@ -1,0 +1,77 @@
+
+
+
+.button {
+  height: 5rem;
+  width: 5rem;
+  position: fixed;
+  z-index: 3;
+  left: 50%;
+  bottom: 3rem;
+  background-color: orange;
+  transform: translateX(-50%);
+  border: none;
+  border-radius: 5rem;
+  outline: none;
+  cursor: pointer;
+  box-shadow: 0rem 0rem 4rem rgba(0 0 0 / 35%);
+  transition: transform, background-color;
+  transition-timing-function: ease;
+  transition-duration: 400ms;
+}
+
+.button:hover {
+  transform: translateX(-50%) scale(1.04);
+}
+
+.button:active {
+  transform: translateX(-50%) scale(.96);
+}
+
+.navWrapper {
+  height: 65vh;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.navInnerWrapper {
+  width: fit-content;
+  height: fit-content;
+  position: relative;
+  transition: left 200ms cubic-bezier(.13, .53, .38, .97);
+}
+
+.linkWrapper {
+  display: flex;
+  margin-top: clamp(2rem, 2vw, 3rem);
+  padding: 0rem 2rem;
+  gap: clamp(1rem, 2vw, 2rem);
+  transition: transform 500ms cubic-bezier(.13, .53, .38, .97);
+  transform: translateY(70%) scale(.9);
+  width: max-content;
+  position: relative;
+  /* transition: left 200ms cubic-bezier(.13, .53, .38, .97); */
+}
+
+.linkWrapperOpen {
+  transform: translateY(0%) scale(1);
+}
+
+.navText {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.navImg {
+  width: max(20vw, 400px);
+  aspect-ratio: 1.8/1;
+  border-radius: .5rem;
+  margin-top: .75em;
+  object-fit: cover;
+}

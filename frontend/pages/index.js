@@ -1,11 +1,15 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import React, { useState } from "react";
+import Navmenu from "../components/Navmenu";
+import styles from "../styles/Home.module.css";
 
 export default function Home() {
+  let [activeNav, setActiveNav] = useState(false);
   return (
-    <div>
-      <h1 className='text-7xl text-red-600'>hi</h1>
-    </div>
-  )
+    <>
+      <div className={`${styles.wrapper}`}>
+        <div className={`${styles.body} ${activeNav ? styles.moveUp : ""}`}></div>
+      </div>
+      <Navmenu activeNav={activeNav} setActiveNav={setActiveNav} />
+    </>
+  );
 }
