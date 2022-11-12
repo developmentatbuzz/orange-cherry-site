@@ -42,7 +42,7 @@ const Navmenu = ({ activeNav, setActiveNav }) => {
             <a
               href=""
               className={`${styles.navTab} ${
-                activeNav ? styles.navTabOpen : ""
+                activeNav ? styles.navTabOpen : "/"
               }`}>
               <h2 className={`${styles.navText}`}>Home</h2>
               <img
@@ -52,7 +52,7 @@ const Navmenu = ({ activeNav, setActiveNav }) => {
               />
             </a>
             <a
-              href=""
+              href="/albums"
               className={`${styles.navTab} ${
                 activeNav ? styles.navTabOpen : ""
               }`}>
@@ -64,7 +64,7 @@ const Navmenu = ({ activeNav, setActiveNav }) => {
               />
             </a>
             <a
-              href=""
+              href="/about"
               className={`${styles.navTab} ${
                 activeNav ? styles.navTabOpen : ""
               }`}>
@@ -76,7 +76,7 @@ const Navmenu = ({ activeNav, setActiveNav }) => {
               />
             </a>
             <a
-              href=""
+              href="/lmfao"
               className={`${styles.navTab} ${
                 activeNav ? styles.navTabOpen : ""
               }`}>
