@@ -29,13 +29,15 @@
 }
 
 .navWrapper {
-  height: 65vh;
+  height: 0vh;
   width: 100%;
   position: fixed;
   left: 0;
   bottom: 0;
-  z-index: 1;
+  z-index: 2;
   background-color: black;
+  transition: height 500ms cubic-bezier(.13, .53, .38, .97);
+
 }
 
 .navInnerWrapper {
@@ -54,7 +56,6 @@
   transform: translateY(70%) scale(.9);
   width: max-content;
   position: relative;
-  /* transition: left 200ms cubic-bezier(.13, .53, .38, .97); */
 }
 
 .linkWrapperOpen {
@@ -75,4 +76,8 @@
   border-radius: .5rem;
   margin-top: .75em;
   object-fit: cover;
+}
+
+.up {
+  height: 65vh;
 }

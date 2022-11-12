@@ -14,13 +14,14 @@ const Navmenu = ({ activeNav, setActiveNav }) => {
         }}></div>
 
       <nav
-        className={`${styles.navWrapper}`}
+        className={`${styles.navWrapper} ${activeNav ? styles.up : ""}`}
+        id="nav"
         >
         <div
           onMouseMove={(e) => {
             // From: https://codepen.io/piogil/pen/XebobL jquery solution. 
   
-            let cntWd = window.innerWidth;
+            let cntWd = $('#nav').innerWidth();
             let links = $('#links');
             let sldWd = links.outerWidth();
             links.css({left: ((cntWd - sldWd)*((e.pageX / cntWd).toFixed(3))).toFixed(1) +"px" });
@@ -40,9 +41,9 @@ const Navmenu = ({ activeNav, setActiveNav }) => {
             >
             
             <a
-              href=""
+              href="/"
               className={`${styles.navTab} ${
-                activeNav ? styles.navTabOpen : "/"
+                activeNav ? styles.navTabOpen : ""
               }`}>
               <h2 className={`${styles.navText}`}>Home</h2>
               <img

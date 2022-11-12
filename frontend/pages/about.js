@@ -25,11 +25,11 @@ const About = () => {
                 }
                 title="soldier"
               />
-              <AboutCard />
+              <AboutCard name="Andrew Fortner" title="CEO"/>
             </div>
             <div className="flex-1 flex-col mt-28">
               <AboutCard name="Nabil Chowdhury" title="lgbtq avenger" />
-              <AboutCard />
+              <AboutCard name="Nick Nguyen" title="Dog Niga"/>
             </div>
             <div className="flex-1 flex-col -mt-16">
               <AboutCard name="Albert Sun" title="cutie" />
@@ -37,7 +37,7 @@ const About = () => {
             </div>
             <div className="flex-1 flex-col mt-10">
               <AboutCard name="Vincent Cheng" title="glizzy gobbler" />
-              <AboutCard />
+              <AboutCard name="Jason Dang" title="Sexy Boy"/>
             </div>
           </div>
         </div>

@@ -13,7 +13,8 @@
 }
 
 .moveUp {
-  transform: translateY(-65%);
+  transform-box: view-box;
+  transform: translateY(-65vh);
 }
 
 @media (prefers-color-scheme: dark) {
