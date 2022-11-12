@@ -10,7 +10,7 @@ const Navmenu = ({ activeNav, setActiveNav }) => {
         className={`${styles.button}`}
         onClick={() => {
           setActiveNav(!activeNav);
-          console.log(activeNav);
+          
         }}></div>
 
       <nav

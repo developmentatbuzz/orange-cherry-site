@@ -6,6 +6,16 @@
   box-sizing: border-box;
 }
 
+.wrapper {
+  transition: transform 500ms cubic-bezier(.13, .53, .38, .97);
+  z-index: 2;
+  position: relative;
+}
+
+.moveUp {
+  transform: translateY(-65%);
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
